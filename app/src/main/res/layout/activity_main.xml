@@ -5,8 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#1A1A2E">
 
+    <!-- Compteur -->
     <TextView
         android:id="@+id/textViewCompteur"
         android:layout_width="wrap_content"
@@ -14,19 +16,48 @@
         android:text="0"
         android:textSize="64sp"
         android:textStyle="bold"
+        android:textColor="#E94560"
         android:layout_marginBottom="48dp"/>
 
+    <!-- Champ de saisie du nom -->
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entre ton nom"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bouton Toast simple -->
     <Button
         android:id="@+id/boutonToast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Afficher un Toast"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Bouton Toast avec nom -->
+    <Button
+        android:id="@+id/boutonToastNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dire Bonjour"
+        android:backgroundTint="#16213E"
+        android:textColor="#E94560"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bouton Incrémenter -->
     <Button
         android:id="@+id/boutonIncrémenter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Incrémenter"/>
+        android:text="Incrémenter"
+        android:backgroundTint="#0F3460"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>
